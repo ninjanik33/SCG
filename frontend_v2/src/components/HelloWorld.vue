@@ -47,8 +47,8 @@ export default {
   },
   created() {
     // let url = 'https://jsonplaceholder.typicode.com/posts'
-    // let url = 'https://linebot-asawachat-scg.herokuapp.com/doAssignment1'
-    let url = 'http://localhost:3000/doAssignment1'
+    let url = 'https://linebot-asawachat-scg.herokuapp.com/doAssignment1'
+    // let url = 'http://localhost:3000/doAssignment1'
     console.log('Create method : ' + url)
     axios.get(url)
     .then(response => {

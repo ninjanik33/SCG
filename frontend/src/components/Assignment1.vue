@@ -6,7 +6,6 @@
       <strong>X, Y, 5, 9, 15, 23, Z - Please create a new function for finding X, Y, Z value</strong>
     </span>
     <p><strong>Answer > {{posts}}</strong></p>
-      <button  v-on:click="callAPI()">Send</button>
   </div>
 </template>
 
@@ -19,7 +18,7 @@ export default {
     }
   },
   created () {
-    this.$api.get('doAssignment2')
+    this.$api.get('doAssignment1')
       .then(response => {
         this.posts = response.data
         console.log(response)
@@ -28,6 +27,8 @@ export default {
         this.errors.push(e)
       })
   }
+
+  // for test api
   // methods: {
   //   async callAPI () {
   //     const x = await fetch('https://maps.googleapis.com/maps/api/directions/json?origin=centralwOrld&destination=SCG%20Bangsue&key=AIzaSyD6HQXUxZhM04M1dez-EqUxNW-xDd3oc-c',

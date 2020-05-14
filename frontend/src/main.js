@@ -11,8 +11,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.use({
   install (Vue) {
     Vue.prototype.$api = axios.create({
-      // baseURL: 'https://linebot-asawachat-scg.herokuapp.com/',
-      baseURL: 'http://localhost:3000/',
+      baseURL: 'https://linebot-asawachat-scg.herokuapp.com/',
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
